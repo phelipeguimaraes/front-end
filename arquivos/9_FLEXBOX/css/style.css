@@ -110,3 +110,20 @@ body {
 .gap .box {
     width: 32%;
 }
+
+/* order */
+.order {
+    display: flex;
+}
+
+#one {
+    order: 1;
+}
+
+#two {
+    order: 2;
+}
+
+#three {
+    order: 3;
+}
