@@ -1,0 +1,1 @@
+console.log('tentando link externo')
