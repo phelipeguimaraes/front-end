@@ -48,3 +48,10 @@ console.log(20 > 10);
 console.log(5 > 10);
 console.log(typeof false);
 console.log("----------------------------");
+
+// 9 - Comparações 
+console.log(5 <= 5);
+console.log(5 < 5);
+console.log(10 == 10);
+console.log(10 == 9);
+console.log(10 != 9);
