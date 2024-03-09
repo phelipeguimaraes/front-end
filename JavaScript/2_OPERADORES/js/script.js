@@ -32,3 +32,7 @@ console.log("----------------------------")
 // 5 - Símbolos especiais em string
 console.log("Testando a \n quebra de linha");
 console.log("Espaçamento \t de tab");
+console.log("----------------------------")
+
+// 6 - Concatenação
+console.log("Oi" + " tudo bem?" + " fazendo?")
