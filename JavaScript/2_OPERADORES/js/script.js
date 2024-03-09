@@ -10,3 +10,8 @@ console.log(5 * 4);
 console.log(9 / 3);
 console.log(5 + (4 * 2));
 
+// 3 - Special numbers
+console.log(typeof Infinity);
+console.log(typeof -Infinity);
+console.log( 12 * "oxi");
+console.log(typeof NaN);
