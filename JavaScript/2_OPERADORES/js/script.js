@@ -40,3 +40,11 @@ console.log("Oi" + " tudo bem?" + " fazendo?");
 // 7 - Template Strings
 console.log(`A soma de 2 + 2 é: ${2 + 2}`);
 console.log(`Podemos executar qualquer coisa aqui ${console.log("testando")}`);
+console.log("----------------------------");
+
+// 8 - Boolean
+console.log(true);
+console.log(20 > 10);
+console.log(5 > 10);
+console.log(typeof false);
+console.log("----------------------------");
