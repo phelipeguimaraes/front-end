@@ -74,3 +74,10 @@ console.log(5 < 2 || 5 > 100)
 console.log(!false)
 console.log(!10 > 5)
 console.log("----------------------------");
+
+// 12 - Empty values
+console.log(typeof null, typeof undefined)
+console.log(null === undefined)
+console.log(null == undefined)
+console.log(null == false)
+console.log(undefined == false)
