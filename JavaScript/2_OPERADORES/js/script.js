@@ -64,3 +64,13 @@ console.log(9 === '9');
 console.log(9 != '9');
 console.log(9 !== '9');
 console.log("----------------------------");
+
+// 11 - Operadores lógicos
+console.log(true && true)
+console.log(true && false)
+console.log(5 > 2 && 2 < 10)
+console.log(5 > 2 || 'Phelipe' === 1)
+console.log(5 < 2 || 5 > 100)
+console.log(!false)
+console.log(!10 > 5)
+console.log("----------------------------");
