@@ -31,6 +31,10 @@ console.log(_teste, $teste)
 console.log('-------------------------------------')
 
 // 3 - prompt
-const age = prompt("Digite tua idade")
+/*const age = prompt("Digite tua idade")
 console.log(`Você tem ${age} anos`)
 console.log('-------------------------------------')
+
+// 4 - alert
+const n = 20
+alert(`é o número ${n}`) */
