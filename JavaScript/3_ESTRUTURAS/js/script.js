@@ -38,3 +38,9 @@ console.log('-------------------------------------')
 // 4 - alert
 const n = 20
 alert(`é o número ${n}`) */
+
+// 5 - Math
+console.log(Math.max(4, 2, 10, 23, 1, 9))
+console.log(Math.floor(6.74))
+console.log(Math.ceil(8.04))
+console.log('-------------------------------------')
