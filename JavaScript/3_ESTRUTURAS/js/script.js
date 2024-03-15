@@ -45,8 +45,24 @@ console.log(Math.floor(6.74))
 console.log(Math.ceil(8.04))
 console.log('-------------------------------------')
 
-// 6 - console
+/* 6 - console
 console.log('teste!')
 console.error('erro ai!!')
 console.warn('aviso!')
-console.log('-------------------------------------')
+console.log('-------------------------------------')*/
+
+// 7 - if
+const m = 10;
+
+if (m > 5) {
+    console.log('M é maior que 5')
+}
+
+const user = 'João'
+if(user === 'João'){
+    console.log('Boa tarde João')
+}
+
+if(user === 'Maria') {
+    console.log('Olá Maria')
+}
