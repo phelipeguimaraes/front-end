@@ -66,3 +66,20 @@ if(user === 'João'){
 if(user === 'Maria') {
     console.log('Olá Maria')
 }
+
+// 8 - else
+const loggedIn = false
+if (loggedIn) {
+    console.log('Está autenticado!')
+} else {
+    console.log('Não está autenticado!')
+}
+
+const q = 10
+const w = 15
+
+if(q > 5 && w > 20) {
+    console.log('Números maiores')
+} else {
+    console.log('Os números não são mais maiores')
+}
