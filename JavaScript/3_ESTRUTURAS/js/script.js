@@ -127,3 +127,13 @@ do {
     cont--
 } while(cont > 1)
 console.log('-------------------------------------')
+
+// 12 - for
+for(let t = 0; t < 10; t++) {
+    console.log(`Repetindo pela ${t}`)
+}
+
+let r = 10
+for(r; r > 0; r--) {
+    console.log(`O r está diminuindo ${r}`)
+}
