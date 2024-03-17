@@ -118,3 +118,12 @@ while(x < 5) {
     console.log(`Imprimindo ${x}`)
     x++
 }
+console.log('-------------------------------------')
+
+// 11 - do while
+let cont = 10
+do {
+    console.log(`Valor de cont: ${cont}`)
+    cont--
+} while(cont > 1)
+console.log('-------------------------------------')
