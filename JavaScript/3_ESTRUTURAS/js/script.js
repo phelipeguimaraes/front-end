@@ -137,3 +137,15 @@ let r = 10
 for(r; r > 0; r--) {
     console.log(`O r está diminuindo ${r}`)
 }
+console.log('-------------------------------------')
+
+// 13 - identação
+for(let u = 0; u < 10; u++) {
+    if(u * 2 > 10) {
+        console.log(`Maior que 10! ${u}`)
+    } else {
+        if(u / 2 === 0) {
+            console.log('Deu 0')
+        }
+    }
+}
