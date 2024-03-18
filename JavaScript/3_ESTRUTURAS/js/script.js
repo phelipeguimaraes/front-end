@@ -172,3 +172,35 @@ for(let s = 1; s < 10; s++) {
     console.log(s)
 }
 console.log('-------------------------------------')
+
+// 16 - switch
+const job = 'Programador'
+
+switch(job) {
+    case 'Jogador':
+        console.log('Você é jogador!')
+        break
+    case 'Programador':
+        console.log('Você é um programador!')
+        break
+    case 'Engenheiro':
+        console.log('Você é um engenheiro!')
+        break
+    default:
+        console.log('Profissão não encontrada!')
+}
+
+// switch 'errado'
+const l = 100
+
+switch(l) {
+    case 200:
+        console.log('L é 200!')
+    case 100:
+        console.log('L é 100!')
+    case 50: 
+    console.log('L é 50!')
+    default:
+        console.log('Não foi encontrado!')
+}
+console.log('-------------------------------------')
