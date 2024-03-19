@@ -33,3 +33,22 @@ function soma(n1, n2) {
 const resultado = soma(a, b)
 console.log(resultado)
 console.log(soma(c, d))
+console.log('------------------------------')
+
+// 3 - escopo da função
+let y = 10
+function testandoEscopo() {
+    let y = 20
+    console.log(`Y dentro da função é: ${y}`)
+}
+testandoEscopo()
+console.log(`Y fora da função é: ${y}`)
+
+let nome = 'Phelipe'
+function string() {
+    let nome = 'Yuri'
+    console.log(`minha string ${nome}`)
+}
+
+string()
+console.log(`minha string ${nome}`)
