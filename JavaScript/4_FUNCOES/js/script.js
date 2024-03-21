@@ -94,3 +94,17 @@ const parOuImpar = (n) => {
 parOuImpar(5)
 parOuImpar(10)
 console.log('------------------------------')
+
+// 6 - mais sobre arrow function
+const raizQuadrada = (x) => {
+    return x * x
+}
+
+console.log(raizQuadrada(4))
+
+const raizQuadrada2 = (x) => x * x
+console.log(raizQuadrada2(7))
+console.log(raizQuadrada2(8))
+
+const helloWord = () => console.log('Hello Word')
+helloWord()
