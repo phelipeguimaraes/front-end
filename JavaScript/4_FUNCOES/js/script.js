@@ -75,3 +75,22 @@ function  escopoAninhado() {
 escopoAninhado()
 console.log(m)
 console.log('------------------------------')
+
+// 5 -arrow function
+const testeArrow = () => {
+    console.log('Está é uma arrow function')
+}
+
+testeArrow()
+
+const parOuImpar = (n) => {
+    if(n % 2 === 0) {
+        console.log('Par')
+        return
+    }
+    console.log('ímpar')
+}
+
+parOuImpar(5)
+parOuImpar(10)
+console.log('------------------------------')
