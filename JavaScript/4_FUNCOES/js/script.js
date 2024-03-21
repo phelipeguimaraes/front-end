@@ -1,5 +1,5 @@
 // 1 - criando uma função
-function minhaFuncao() {
+/*function minhaFuncao() {
     console.log('Testando')
 }
 
@@ -108,3 +108,47 @@ console.log(raizQuadrada2(8))
 
 const helloWord = () => console.log('Hello Word')
 helloWord()
+console.log('------------------------------')
+
+// 7 - parametros opcional
+const multiplication = function(m, n) {
+    if(n === undefined) {
+        return m * 2
+    } else {
+        return m * 2
+    }
+}
+
+console.log(multiplication(5))
+console.log(multiplication(3, 2))
+
+const greeting = (namee) => {
+    if(!namee) {
+        console.log('Olá!')
+        return
+    }
+
+    console.log(`Olá ${namee}!`)
+
+}
+
+greeting()
+greeting('Phelipe')*/
+
+// 8 - valor default
+const customGreeting = (name, greet = 'Olá') => {
+    return `${greet}, ${name}!`
+}
+
+console.log(customGreeting('Phelipe'))
+console.log(customGreeting('Joao', 'Bom dia'))
+
+const repeatText = (text, repeat = 2) => {
+    for(let i = 0; i < repeat; i++) {
+        console.log(text)
+    }
+}
+
+repeatText('oi')
+repeatText('5x agora', 5)
+console.log('---------------')
