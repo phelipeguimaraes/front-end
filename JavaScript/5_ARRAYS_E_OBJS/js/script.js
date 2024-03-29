@@ -31,7 +31,7 @@
  console.log(text.toUpperCase())
  console.log(typeof text.toUpperCase)
  console.log(text.indexOf('m'))
- console.log('------------------')*/
+ console.log('------------------')
 
  // 4 - Obejtos 
  const person = {
@@ -101,4 +101,11 @@ console.log(b)
 delete b.age
 console.log(a)
 console.log(b)
+console.log('------------------')*/
+
+// 9 - loop em array
+const users = ['Phelipe', 'Yuri', 'Dudu', 'Mosquito']
+for(let i = 0; i < users.length; i++) {
+    console.log(`Listando o usuário ${users[i]}`)
+}
 console.log('------------------')
