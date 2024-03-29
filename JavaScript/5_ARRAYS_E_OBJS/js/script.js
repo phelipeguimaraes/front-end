@@ -76,3 +76,11 @@ const obj2 = {
 Object.assign(obj2, obj)
 console.log(obj2)
 console.log(obj)
+console.log('------------------')
+
+// 7 - conhecendo melhor os objetos
+console.log(Object.keys(obj))
+console.log(Object.keys(obj2))
+console.log(Object.keys(car))
+console.log(Object.entries(car))
+console.log('------------------')
