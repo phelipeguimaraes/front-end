@@ -84,3 +84,21 @@ console.log(Object.keys(obj2))
 console.log(Object.keys(car))
 console.log(Object.entries(car))
 console.log('------------------')
+
+// 8 - Mutação
+const a = {
+    name: 'Phelipe'
+}
+
+const b = a 
+console.log(a)
+console.log(b)
+console.log(a === b)
+a.age = 19
+console.log(a)
+console.log(b)
+
+delete b.age
+console.log(a)
+console.log(b)
+console.log('------------------')
