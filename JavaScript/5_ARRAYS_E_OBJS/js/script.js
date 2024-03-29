@@ -19,3 +19,15 @@
 
  const myName = 'Phelipe'
  console.log(myName.length)
+ console.log('------------------')
+
+ // 3 - métodos
+ const otherNumbers = [1, 2, 3]
+ const otherNumbers2 = [4, 5, 6]
+ const allNumbers = otherNumbers.concat(otherNumbers2)
+ console.log(allNumbers)
+
+ const text = 'Algum texto'
+ console.log(text.toUpperCase())
+ console.log(typeof text.toUpperCase)
+ console.log(text.indexOf('m'))
