@@ -126,3 +126,14 @@ console.log(array)
 array.push('z', 'x', 'y')
 console.log(array)
 console.log('------------------')
+
+// 11 - shift e unshift
+const letters = ['a', 'b', 'c']
+const letter = letters.shift()
+console.log(letter)
+console.log(letters)
+
+letters.unshift('p', 'q', 'r')
+letters.unshift('s')
+console.log(letters)
+console.log('------------------')
