@@ -1,4 +1,4 @@
-// 1 - Arrays
+/*// 1 - Arrays
  const lista = [1, 2, 3, 4, 5]
  console.log(lista)
  console.log(typeof lista)
@@ -31,3 +31,30 @@
  console.log(text.toUpperCase())
  console.log(typeof text.toUpperCase)
  console.log(text.indexOf('m'))
+ console.log('------------------')*/
+
+ // 4 - Obejtos 
+ const person = {
+    name: 'Phelipe',
+    age: 19,
+    job: 'Programador'
+ }
+console.log(person)
+console.log(person.name)
+console.log(person.name.length)
+console.log(typeof person)
+console.log('------------------')
+
+// 5 - criando e deletando propriedades
+const car = {
+    engine: 2.0,
+    brand: 'VW',
+    model: 'Tiguan',
+    km: 20000
+}
+console.log(car)
+car.doors = 4
+console.log(car)
+delete car.km
+console.log(car)
+console.log('------------------')
