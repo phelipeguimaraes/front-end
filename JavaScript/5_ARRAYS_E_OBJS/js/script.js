@@ -137,3 +137,18 @@ letters.unshift('p', 'q', 'r')
 letters.unshift('s')
 console.log(letters)
 console.log('------------------')
+
+
+// 12 - indexOf e lastIndexOf
+const myElements = ['Morango', 'Maçã', 'Abacate', 'Pêra', 'Abacate']
+console.log(myElements.indexOf('Maçã'))
+console.log(myElements.indexOf('Abacate'))
+
+console.log(myElements[2])
+console.log(myElements[myElements.indexOf('Abacate')])
+
+console.log(myElements.lastIndexOf('Abacate'))
+
+console.log(myElements.indexOf('Mamão'))
+console.log(myElements.lastIndexOf('Mamão'))
+console.log('------------------')
