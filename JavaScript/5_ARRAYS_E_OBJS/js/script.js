@@ -165,3 +165,37 @@ console.log(subArray3)
 const subArray4 = testeSlice.slice(2)
 console.log(subArray4)
 console.log('------------------')
+
+// 14 - forEach
+const nums = [1, 2, 3, 4, 5]
+
+nums.forEach((num) => {
+    console.log(`O número é ${num}`)
+})
+
+const posts = [
+    {title:'Primeiro post', category: 'PHP'},
+    {title:'Segundo post', category: 'JavaScript'},
+    {title:'Terceiro post', category: 'Python'}
+]
+
+posts.forEach((post) => {
+    console.log(`Exibindo post: ${post.title} da categoria ${post.category}`)
+})
+console.log('---------------------------')
+
+const names = ['Phelipe', 'Neto', 'Gabi', 'Leandro', 'Júlia']
+names.forEach((name) => {
+    console.log(`Me chamo ${name}`)
+})
+console.log('------------------------')
+
+const apresentation = [
+    {name: names[0], idade: '19 anos'},
+    {name: names[1], idade: '21 anos'},
+    {name: names[4], idade: '28 anos'},
+]
+
+apresentation.forEach((apresen) => {
+    console.log(`Meu nome é: ${apresen.name} e tenho ${apresen.idade}`)
+})
