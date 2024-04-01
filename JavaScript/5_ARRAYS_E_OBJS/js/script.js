@@ -199,3 +199,15 @@ const apresentation = [
 apresentation.forEach((apresen) => {
     console.log(`Meu nome é: ${apresen.name} e tenho ${apresen.idade}`)
 })
+console.log('------------------------')
+
+// 15 - includes
+
+const brands = ['BMW', 'VW', 'Fiat']
+console.log(brands.includes('Fiat'))
+console.log(brands.includes('Honda'))
+
+if(brands.includes('BMW')) {
+    console.log('Há carros da marca BMW')
+}
+console.log('------------------------')
