@@ -151,7 +151,7 @@ console.log(myElements.lastIndexOf('Abacate'))
 
 console.log(myElements.indexOf('Mamão'))
 console.log(myElements.lastIndexOf('Mamão'))
-console.log('------------------')*/
+console.log('------------------')
 
 // 13 - slice
 const testeSlice = ['a', 'b', 'c', 'd', 'e', 'f']
@@ -216,4 +216,12 @@ console.log('------------------------')
 const reverseTeste = [1, 2, 3, 4, 5]
 reverseTeste.reverse()
 console.log(reverseTeste)
-console.log('------------------------')
+console.log('------------------------')*/
+
+
+// 18 - trim
+const trimTest = ' testando \n '
+console.log(trimTest)
+console.log(trimTest.trim())
+console.log(trimTest.length)
+console.log(trimTest.trim().length)
