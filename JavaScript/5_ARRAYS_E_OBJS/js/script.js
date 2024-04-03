@@ -261,3 +261,24 @@ console.log('------------------------')
 const palavra = 'Testando '
 console.log(palavra.repeat(5))
 console.log('------------------------')
+
+// 23 - rest operator
+const somaInfinita = (...args) => {
+    let total = 0
+
+    for(let i = 0; i < args.length; i++) {
+        total += args[i]
+    }
+
+    return total
+}
+
+console.log(somaInfinita(1, 2, 3))
+console.log(somaInfinita(1, 23, 43, 4321, 3245435))
+
+const somaInfinita2 = (...arg) => {
+    let totally = 0
+    for(let y = 0; y < arg.length; y++) {
+        totally += arg[y]  
+    }
+}
