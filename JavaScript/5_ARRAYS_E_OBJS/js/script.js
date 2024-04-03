@@ -236,3 +236,14 @@ console.log(newNumber)
 
 const testePadEnd = newNumber.padEnd(10, '0')
 console.log(testePadEnd)
+console.log('------------------------')
+
+//20 - split
+const frase = 'O rato roeu a roupa do rei de Roma'
+const arrayDaFrase = frase.split(' ')
+
+console.log(arrayDaFrase)
+
+const frase2 = 'O Palmeiras num tem mundial e nunca vai ter mundial!'
+console.log(frase2.split(' '))
+console.log('------------------------')
