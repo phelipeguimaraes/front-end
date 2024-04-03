@@ -247,3 +247,17 @@ console.log(arrayDaFrase)
 const frase2 = 'O Palmeiras num tem mundial e nunca vai ter mundial!'
 console.log(frase2.split(' '))
 console.log('------------------------')
+
+// 21 - join
+const fraseDeNovo = arrayDaFrase.join(' ')
+console.log(fraseDeNovo)
+
+const itensParaComprar = ['Mouse', 'Teclado', 'Monitor']
+const fraseDecompra = `Precisamos comprar: ${itensParaComprar.join(', ')}.`
+console.log(fraseDecompra)
+console.log('------------------------')
+
+// 22 - repeat
+const palavra = 'Testando '
+console.log(palavra.repeat(5))
+console.log('------------------------')
