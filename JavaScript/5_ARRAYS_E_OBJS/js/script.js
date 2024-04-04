@@ -312,3 +312,9 @@ console.log(firstName, lastName, job)
 const {firstName: primeiroNome} = userDetails
 console.log(primeiroNome)
 console.log(firstName)
+console.log('------------------------')
+
+// 26 - destructuring com arrays
+const myList = ['Motoca', 'Carro', 'Skate', 'Bike']
+const [veiculoA, veiculoB, veiculoC, veiculoD] = myList
+console.log(veiculoA, veiculoB, veiculoC, veiculoD)
