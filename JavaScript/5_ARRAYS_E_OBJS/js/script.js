@@ -273,12 +273,27 @@ const somaInfinita = (...args) => {
     return total
 }
 
-console.log(somaInfinita(1, 2, 3))
+console.log(somaInfinita(1, 2, 4))
 console.log(somaInfinita(1, 23, 43, 4321, 3245435))
 
 const somaInfinita2 = (...arg) => {
     let totally = 0
     for(let y = 0; y < arg.length; y++) {
         totally += arg[y]  
+        return totally
     }
 }
+console.log(somaInfinita2(12, 4, 5))
+console.log('------------------------')
+
+// 24- for of
+const somaInfinita3 = (...args) => {
+    let total = 0
+    for(num of args) {
+        total += num
+    }
+    return total
+}
+console.log(somaInfinita3(7, 2, 8))
+console.log(somaInfinita3(4,5,1,22,56))
+console.log('------------------------')
