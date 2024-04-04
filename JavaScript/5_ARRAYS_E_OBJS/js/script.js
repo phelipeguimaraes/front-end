@@ -216,7 +216,7 @@ console.log('------------------------')
 const reverseTeste = [1, 2, 3, 4, 5]
 reverseTeste.reverse()
 console.log(reverseTeste)
-console.log('------------------------')*/
+console.log('------------------------')
 
 
 // 18 - trim
@@ -318,3 +318,25 @@ console.log('------------------------')
 const myList = ['Motoca', 'Carro', 'Skate', 'Bike']
 const [veiculoA, veiculoB, veiculoC, veiculoD] = myList
 console.log(veiculoA, veiculoB, veiculoC, veiculoD)
+console.log('------------------------')*/
+
+// 27 - JSON
+const myJson = '{"name": "Phelipe", "age": 19, "skills": ["HTML", "CSS", "JavaScript"]}'
+console.log(myJson)
+console.log(typeof myJson)
+
+// 28 - JSON para objetos e objetos para JSON
+const myObject = JSON.parse(myJson)
+console.log(myObject)
+console.log(myObject.name)
+console.log(typeof myObject)
+
+// json invalido
+const badjson = '{"name": Phelipe, "age": 19}'
+// const myBadObject = JSON.parse(badjson)
+myObject.isOpenToWork = true
+console.log(myObject)
+
+const myNewJson = JSON.stringify(myObject)
+console.log(myNewJson)
+console.log(typeof myNewJson)
