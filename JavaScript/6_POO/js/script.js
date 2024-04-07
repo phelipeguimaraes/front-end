@@ -116,3 +116,33 @@ messi.gols = 850
 messi.assistências = 340
 console.log(messi)
 console.log('-------------------------')
+
+// 6 - função como classe - função construtora
+function criarCachorro(nome, raca) {
+    const cachorro = Object.create({})
+
+    cachorro.nome = nome
+    cachorro.raca = raca
+
+    return cachorro
+}
+
+const bob = criarCachorro('Bob', 'Vira lata')
+console.log(bob)
+const jack = criarCachorro('Jack', 'Poodle')
+console.log(jack)
+console.log(Object.getPrototypeOf(jack))
+console.log('-------------------------')
+
+function criarVeiculo(modelo, cambio, KM) {
+    const carro = Object.create({})
+    carro.modelo = modelo
+    carro.cambio = cambio
+    carro.KM = KM
+    return carro
+}
+
+const onix = criarVeiculo('Onix', 'automático', 50000)
+console.log(onix)
+console.log(criarVeiculo('Corolla', 'automático', 40000))
+console.log('-------------------------')
