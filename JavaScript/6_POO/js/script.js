@@ -1,5 +1,5 @@
 // 1 - métodos
-const animal = {
+/*const animal = {
     nome: 'Bob',
     latir: function() {
         console.log('au au')
@@ -77,4 +77,42 @@ const mySecondObject = Object.create(myObject)
 console.log(mySecondObject)
 console.log(mySecondObject.a)
 console.log(Object.getPrototypeOf(mySecondObject) === myObject)
+console.log('-------------------------')*/
+
+// 5 - classes básicas
+const cachorro = {
+    raca: null,
+    patas: 4
+}
+const pastorAlemao = Object.create(cachorro)
+pastorAlemao.raca = 'Pastor Alemão'
+console.log(pastorAlemao)
+console.log(pastorAlemao.patas)
+
+const bulldog = Object.create(cachorro)
+bulldog.raca = 'Bulldog'
+console.log(bulldog)
+console.log('-------------------------')
+
+const jogador = {
+    nome: 'Neymar',
+    idade: 32,
+    clube:'Al-Hilal'
+}
+
+const cris = Object.create(jogador)
+cris.nome = 'Cristiano Ronaldo'
+cris.idade = 39
+cris.clube = 'Al-Nassr'
+cris.gols = 885
+cris.assistências = 220
+console.log(cris)
+
+const messi = Object.create(jogador)
+messi.nome = 'Lionel Messi'
+messi.idade = 36
+messi.clube = 'Inter Miami'
+messi.gols = 850
+messi.assistências = 340
+console.log(messi)
 console.log('-------------------------')
