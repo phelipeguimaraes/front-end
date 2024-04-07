@@ -52,3 +52,14 @@ veiculo.setCam('Manual')
 console.log(veiculo.getCam())
 console.log(veiculo.getCam(veiculo.setCam('Câmbio automático')))
 console.log('-------------------------')
+
+// 3 - prototype
+const text = 'abc'
+console.log(Object.getPrototypeOf(text))
+
+const bool = true
+console.log(Object.getPrototypeOf(bool))
+
+const arr = []
+console.log(arr.length)
+console.log(Object.getPrototypeOf(arr))
