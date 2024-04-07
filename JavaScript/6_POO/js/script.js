@@ -146,3 +146,22 @@ const onix = criarVeiculo('Onix', 'automático', 50000)
 console.log(onix)
 console.log(criarVeiculo('Corolla', 'automático', 40000))
 console.log('-------------------------')
+
+// 7 - funçoes como classe - NEW
+function Cachorro(nome, raca) {
+    this.nome = nome
+    this.raca = raca
+}
+
+const husky = new Cachorro('Ozzy', 'Husky')
+console.log(husky)
+
+function Jogador(nome, clube, idolo) {
+    this.nome = nome
+    this.clube = clube
+    this.idolo = idolo
+}
+
+const cassio = new Jogador('Cassio', 'Corinthinas', 'sim')
+console.log(cassio)
+console.log('-------------------------')
