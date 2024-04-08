@@ -198,3 +198,48 @@ class JogadorClasse {
 
 const ney = new JogadorClasse('Neymar', 'Al Hilal', 32, 420)
 console.log(ney)
+console.log('-------------------------')
+
+// 10 - mais sobre classes
+class Caminhao {
+    constructor(eixos, cor) {
+        this.eixos = eixos
+        this.cor = cor
+    }
+
+    descreverCaminhao() {
+        console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`)
+    }
+
+}
+
+const scania = new Caminhao(6, 'Vermelha')
+console.log(scania)
+scania.descreverCaminhao()
+
+Caminhao.motor = 4 
+
+const c2 = new Caminhao(4, 'Preto')
+console.log(c2)
+
+console.log(c2.motor)
+Caminhao.prototype.motor = 4.0
+const c3 = new Caminhao(6, 'Azul')
+console.log(c3)
+console.log(c3.motor)
+console.log('-------------------------')
+
+class phelipe {
+    constructor(hillux, faculdade, onibus) {
+        this.hillux = hillux
+        this.faculdade = faculdade
+        this.onibus = onibus
+    }
+    dirigindo() {
+        console.log(`Quando eu saio da ${this.faculdade}, eu vou embora de ${this.hillux} ou de ${this.onibus}.`)
+    }
+}
+
+const lipe = new phelipe('Hillux', 'faculdade', 'onibus')
+console.log(lipe)
+lipe.dirigindo()  
