@@ -175,3 +175,26 @@ console.log(Cachorro.prototype)
 husky.uivar()
 console.log('-------------------------')
 
+// 9 - classes es6
+class CachorroClasse {
+    constructor(nome, raca) {
+        this.nome = nome
+        this.raca = raca
+    }
+}
+
+const Jeff = new CachorroClasse('Jeff', 'Pitbull')
+console.log(Jeff)
+console.log(Object.getPrototypeOf(Jeff))
+console.log('-------------------------')
+class JogadorClasse {
+    constructor(nome, clube, idade, gols) {
+        this.nome = nome
+        this.clube = clube
+        this.idade = idade
+        this.gols = gols
+    }
+}
+
+const ney = new JogadorClasse('Neymar', 'Al Hilal', 32, 420)
+console.log(ney)
