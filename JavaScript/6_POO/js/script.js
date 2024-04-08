@@ -165,3 +165,13 @@ function Jogador(nome, clube, idolo) {
 const cassio = new Jogador('Cassio', 'Corinthinas', 'sim')
 console.log(cassio)
 console.log('-------------------------')
+
+// 8 - metodos na funcao construtora
+Cachorro.prototype.uivar = function() {
+    console.log('Auuuu!')
+}
+
+console.log(Cachorro.prototype)
+husky.uivar()
+console.log('-------------------------')
+
