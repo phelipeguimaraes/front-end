@@ -77,7 +77,7 @@ const mySecondObject = Object.create(myObject)
 console.log(mySecondObject)
 console.log(mySecondObject.a)
 console.log(Object.getPrototypeOf(mySecondObject) === myObject)
-console.log('-------------------------')*/
+console.log('-------------------------')
 
 // 5 - classes básicas
 const cachorro = {
@@ -242,4 +242,39 @@ class phelipe {
 
 const lipe = new phelipe('Hillux', 'faculdade', 'onibus')
 console.log(lipe)
-lipe.dirigindo()  
+lipe.dirigindo()  */
+
+// 11 - override
+class Humano {
+    constructor(nome, idade) {
+        this.nome = nome
+        this.idade = idade
+    }
+}
+
+const phelipe = new Humano('Phelipe', 19)
+console.log(phelipe)
+
+Humano.prototype.idade = 'Não definida'
+console.log(phelipe.idade)
+console.log(Humano.prototype.idade)
+
+class Carros {
+    constructor(modelo, marca, valor, ano, KM) {
+        this.modelo = modelo
+        this.marca = marca
+        this.valor = valor
+        this.ano = ano
+        this.KM = KM
+    }
+    comprandoCarro() {
+        console.log(`Acabei de comprar um ${this.modelo}, da marca ${this.marca}. Eu dei sorte, pois paguei ${this.valor} no leilão. Pra um carro no ano de ${this.ano}, está ótimo. Com ${this.KM} rodados.`)      
+    }
+}
+
+const Camaro = new Carros('Camaro', 'Chevrolet', '120.000.00', 2018, '92 mil KM')
+console.log(Camaro)
+Camaro.comprandoCarro()
+Carros.prototype.modelo = 'Fox'
+console.log(Camaro.modelo)
+console.log(Carros.prototype.modelo)
