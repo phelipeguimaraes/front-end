@@ -242,7 +242,7 @@ class phelipe {
 
 const lipe = new phelipe('Hillux', 'faculdade', 'onibus')
 console.log(lipe)
-lipe.dirigindo()  */
+lipe.dirigindo()  
 
 // 11 - override
 class Humano {
@@ -277,4 +277,40 @@ console.log(Camaro)
 Camaro.comprandoCarro()
 Carros.prototype.modelo = 'Fox'
 console.log(Camaro.modelo)
-console.log(Carros.prototype.modelo)
+console.log(Carros.prototype.modelo)*/
+
+// 12 - Symbol
+class Aviao {
+    constructor(marca, turbina) {
+        this.marca = marca
+        this.turbina = turbina
+    }
+}
+
+const asas = Symbol()
+const pilotos = Symbol()
+
+Aviao.prototype[asas] = 2
+Aviao.prototype[pilotos] = 3
+
+const boeing = new Aviao('Boeing', 10)
+console.log(boeing)
+console.log(boeing[asas])
+console.log('-------------------------')
+
+class Escola {
+    constructor(nome, alunos) {
+        this.nome = nome
+        this.alunos = alunos
+    }
+}
+
+const ipe = new Escola('Colégio IPÊ', 1500)
+console.log(ipe)
+const salas = Symbol()
+const temaDoColegio = Symbol()
+Escola.prototype[salas] = 30
+Escola.prototype[temaDoColegio] = 'Viver para Cristo'
+console.log(ipe[salas])
+console.log(ipe[temaDoColegio])
+console.log('-------------------------')
