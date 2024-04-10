@@ -314,3 +314,48 @@ Escola.prototype[temaDoColegio] = 'Viver para Cristo'
 console.log(ipe[salas])
 console.log(ipe[temaDoColegio])
 console.log('-------------------------')
+
+// 13 - getter e setter
+class Post {
+    constructor(titulo, descricao, tags) {
+        this.titulo = titulo
+        this.descricao = descricao
+        this.tags = tags
+    }
+    get exibirTítulo() {
+        return `Você está lendo: ${this.titulo}`
+    }
+    set adicionarTags(tags) {
+        const tagsArrays = tags.split(', ')
+        this.tags = tagsArrays
+    }
+}
+
+const myPost = new Post('Algum post', 'É um post sobre programação')
+console.log(myPost)
+console.log(myPost.exibirTítulo)
+myPost.adicionarTags = 'programação, JavaScript, Python'
+console.log(myPost) 
+console.log('-------------------------')
+
+class person {
+    constructor(nome, idade, sobreVida) {
+        this.nome = nome
+        this.idade = idade
+        this.sobreVida = sobreVida
+    }
+    get curiosidades() {
+        return `Um parceiro, que eu considero irmão de outra mãe <3`
+    }
+    set addFrase(sobreVida) {
+        const fraseArray = sobreVida.split(', ')
+        this.sobreVida = fraseArray
+    }
+}
+
+const dudu = new person('Eduardo', 19)
+console.log(dudu)
+console.log(dudu.curiosidades)
+dudu.addFrase = 'Um cara foda, que admiro muito.'
+console.log(dudu)
+console.log('-------------------------')
