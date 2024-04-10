@@ -359,3 +359,38 @@ console.log(dudu.curiosidades)
 dudu.addFrase = 'Um cara foda, que admiro muito.'
 console.log(dudu)
 console.log('-------------------------')
+
+// 14 - Herança
+class Mamifero {
+    constructor(patas) {
+        this.patas = patas
+    }
+}
+
+class Lobo extends Mamifero {
+    constructor(patas, nome) {
+        super(patas, patas)
+        this.nome = nome
+    }
+}
+
+const shark = new Lobo(4, 'Shark')
+console.log(shark)
+console.log('-------------------------')
+
+class animaisAquaticos {
+    constructor(nadadeiras) {
+        this.nadadeiras = nadadeiras
+    }
+}
+
+class peixePalhaço extends animaisAquaticos{
+    constructor(nadadeiras, nome) {
+        super(nadadeiras, nadadeiras)
+        this.nome = nome
+    }
+}
+
+const nemo = new peixePalhaço(2, 'Nemo')
+console.log(nemo)
+console.log('-------------------------')
