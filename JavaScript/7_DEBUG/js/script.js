@@ -37,14 +37,45 @@ if(c == 1) {
     c = d + 2
 }
 
-debugger
+// debugger
 for(let i =  0; i < d; i++) {
     c = c + 2
 }
 
 console.log('executou o loop')
-debugger
+// debugger
 if(c > 5) {
     c = 25
 }
 console.log('----------')
+
+// 4 - tratamento de dados
+function checkNumber(n) {
+    const  result = Number(n)
+    if(Number.isNaN(result)) {
+        console.log('Valor incorreto!')
+        return
+    }
+    console.log('Valor correto!')
+    return result
+}
+
+checkNumber(5)
+checkNumber('10')
+checkNumber({})
+checkNumber('teste')
+console.log('----------') 
+
+function verificadordeIdade (n) {
+    const result = Number(n)
+    if(Number(result) <= 5) {
+        console.log('vai pra casa')
+         
+    } else {
+        console.log('Apita meu sócio kkkk')
+         
+    }
+    return
+}
+
+verificadordeIdade(2)
