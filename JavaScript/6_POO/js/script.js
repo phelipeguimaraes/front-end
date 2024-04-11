@@ -394,3 +394,10 @@ class peixePalhaço extends animaisAquaticos{
 const nemo = new peixePalhaço(2, 'Nemo')
 console.log(nemo)
 console.log('-------------------------')
+
+// 15 - Operador instaceof
+console.log(shark instanceof Lobo)
+console.log(Lobo instanceof Mamifero)
+console.log(new Lobo(4, 'teste') instanceof Mamifero)
+console.log(new Post('a', 'b') instanceof Lobo)
+console.log('-------------------------')
