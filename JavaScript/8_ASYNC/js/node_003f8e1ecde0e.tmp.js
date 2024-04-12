@@ -15,3 +15,7 @@ console.log('Ainda não executou 2')
 // }, 3000)
 
 // console.log('Ainda não começou 2')
+let b = 0
+for(let i = 1; i > b; i++) {
+    console.log('oos putao')
+}
