@@ -15,3 +15,32 @@ console.log('Ainda não executou 2')
 // }, 3000)
 
 // console.log('Ainda não começou 2')
+
+// 3 - Promise
+console.log('=====================================')
+const promessa = Promise.resolve(5 + 5)
+console.log('Algum código')
+
+promessa.then(value => {
+    console.log(`A soma é ${value}`)
+    return value
+})
+.then((value) => value - 1)
+.then((value) => console.log(`Agora é ${value}`))
+
+console.log('Outro código')
+
+const human = Promise.resolve('coração')
+console.log('teste 1')
+
+human.then(value => {
+    console.log(`Necessitamos de um ${value}`)
+    return value
+})
+const cr7 = Promise.resolve(885)
+cr7.then(value => {
+    console.log(`Esse robozâo possui ${value} gols.`)
+})
+
+console.log('teste 2')
+
