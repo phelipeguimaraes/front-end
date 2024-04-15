@@ -1,5 +1,5 @@
 // 1 - setTimeout
-console.log('Ainda não executou')
+/*console.log('Ainda não executou')
 
 setTimeout(function() {
     console.log('Requisição assíncrona')
@@ -63,4 +63,42 @@ Promise.resolve(5 * 7)
         throw new Error('Erro encontrado!!')
     }
 })
-.catch((erro) => console.log(`Tente novamente: ${erro}`))
+.catch((erro) => console.log(`Tente novamente: ${erro}`))*/
+
+
+// 5 - rejeição
+function checkNumber(n) {
+    return new Promise((resolve, reject) => {
+        if(n > 10) {
+            resolve(`O número é maior que 10`)
+        } else {
+            reject(new Error('Número muito baixo'))
+        }
+    })
+}
+
+const a = checkNumber(20)
+const b = checkNumber(10)
+
+a.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Um erro ocorreu: ${err}`))
+
+b.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Um erro ocorreu: ${err}`))
+
+console.log('------------------')
+function checkNumber1 (num) {
+    return new Promise((resolve, reject) => {
+        const resultado = Number(num)
+        if(Number.isNaN(resultado)) {
+            resolve(`é um número, parabéns!`)
+        } else {
+            reject(new Error('Apenas números!'))
+        }
+        
+    })
+}
+
+const n1 = checkNumber1(9)
+const n2 = checkNumber1(4)
+
+n1.then((n) => console.log(`Esse ${n}`)).catch((err) => console.log(`Por favor: ${err}`))
+n2.then((n) => console.log(`Esse ${n}`)).catch((err) => console.log(`Por favor: ${err}`))
