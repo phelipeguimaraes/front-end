@@ -130,7 +130,7 @@ const t1 = new Promise((resolve, reject) => {
 
 const t2 = Promise.resolve(2 - 45)
 const t3 = Promise.resolve(44 * 2)
-Promise.all([t1,t2, t3]).then((valores) => console.log(valores))*/
+Promise.all([t1,t2, t3]).then((valores) => console.log(valores))
 
 // 7 - async functions
 async function somarComDelay(a, b) {
@@ -138,4 +138,20 @@ async function somarComDelay(a, b) {
 }
 
 somarComDelay(2, 5).then((value) => console.log(`O valor da soma é: ${value}`))
-console.log('teste async')
+console.log('teste async')*/
+
+// 8 - async await
+function resolveComDelay() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Resolveu a Promise')
+        }, 2000)
+    })
+}
+
+async function chamadaAsync() {
+    console.log('Chamando a Promise, e esperando o resultado')
+    const result = await resolveComDelay()
+    console.log(`O resultado chegou ${result}`)
+}
+ chamadaAsync()
