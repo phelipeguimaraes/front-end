@@ -63,7 +63,7 @@ Promise.resolve(5 * 7)
         throw new Error('Erro encontrado!!')
     }
 })
-.catch((erro) => console.log(`Tente novamente: ${erro}`))*/
+.catch((erro) => console.log(`Tente novamente: ${erro}`))
 
 
 // 5 - rejeição
@@ -130,4 +130,12 @@ const t1 = new Promise((resolve, reject) => {
 
 const t2 = Promise.resolve(2 - 45)
 const t3 = Promise.resolve(44 * 2)
-Promise.all([t1,t2, t3]).then((valores) => console.log(valores))
+Promise.all([t1,t2, t3]).then((valores) => console.log(valores))*/
+
+// 7 - async functions
+async function somarComDelay(a, b) {
+    return a + b
+}
+
+somarComDelay(2, 5).then((value) => console.log(`O valor da soma é: ${value}`))
+console.log('teste async')
