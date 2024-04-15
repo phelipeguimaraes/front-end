@@ -129,5 +129,10 @@ const t1 = new Promise((resolve, reject) => {
 })
 
 const t2 = Promise.resolve(2 - 45)
-const t3 = Promise.resolve(44 * 2)
+const t3 = new Promise((resolve, reject) => {
+    let n1 = 5
+    for(let tot = 0; tot < n1; tot + 2) {
+        resolve(`${tot}`)
+    }
+})
 Promise.all([t1,t2, t3]).then((valores) => console.log(valores))
