@@ -11,3 +11,7 @@ console.log(listaItens)
 // 3 - selecionando elemento por id
 const title = document.getElementById("title")
 console.log(title)
+
+// 4 - selecionado elementos por classe
+const products = document.getElementsByClassName('product')
+console.log(products)
