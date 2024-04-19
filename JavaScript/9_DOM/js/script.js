@@ -15,3 +15,10 @@ console.log(title)
 // 4 - selecionado elementos por classe
 const products = document.getElementsByClassName('product')
 console.log(products)
+
+// 5 - selecionando os elementos por CSS
+const productsQuery = document.querySelectorAll('.product')
+console.log(productsQuery)
+
+const mainContainer = document.querySelector('#main-container')
+console.log(mainContainer)
