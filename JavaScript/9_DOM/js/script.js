@@ -24,10 +24,15 @@ const mainContainer = document.querySelector('#main-container')
 console.log(mainContainer)
 
 // 6 - insertBefore
-const p = document.createElement('p')
+const p = document.createElement('p') // método criando elemento (criando o paragrafo)
 console.log(p)
 
-const header = title.parentElement
+const header = title.parentElement // elemento pai
 console.log(header)
 
-header.insertBefore(p, title)
+header.insertBefore(p, title) // elemento antes do outro (paragrafo ante do title)
+
+// 7 - appendChild
+const navLinks = document.querySelector('nav ul')
+const li = document.createElement('li')
+navLinks.appendChild(li) // método para adiconar um elemento dentro do elemento pai, vai o último
