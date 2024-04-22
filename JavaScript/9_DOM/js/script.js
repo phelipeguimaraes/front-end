@@ -59,3 +59,12 @@ console.log(firstLink)
 firstLink.setAttribute('href', 'https://www.facebook.com') // metodo para mudar os valores
 console.log(firstLink.getAttribute('href')) // metodo para ler
 firstLink.setAttribute('target', '_blank')
+
+// 11 - altura e largura
+const footer = document.querySelector('footer')
+ 
+console.log(footer.offsetWidth) // largura do elemento com a borda
+console.log(footer.offsetHeight) // altura do elemento com a borda
+
+console.log(footer.clientWidth) // largura do elemento sem a borda
+console.log(footer.clientHeight) // altura do elemento sem a borda
