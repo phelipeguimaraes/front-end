@@ -41,3 +41,13 @@ navLinks.appendChild(li) // método para adiconar um elemento dentro do elemento
 const h2 = document.createElement('h2')
 h2.textContent = 'Meu novo título!' // método para escever no elemento
 header.replaceChild(h2, title) // método para trocar elementos, h2 vai para o lugar do title
+
+// 9 - createTextNode
+
+const myText = document.createTextNode("Agora vamos colocar mais um título") // Método de criar um texto
+console.log(myText)
+
+const h3 = document.createElement('h3')
+h3.appendChild(myText)
+console.log(h3)
+mainContainer.appendChild(h3)
