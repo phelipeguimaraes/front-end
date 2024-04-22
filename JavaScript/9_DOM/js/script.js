@@ -36,3 +36,8 @@ header.insertBefore(p, title) // elemento antes do outro (paragrafo ante do titl
 const navLinks = document.querySelector('nav ul')
 const li = document.createElement('li')
 navLinks.appendChild(li) // método para adiconar um elemento dentro do elemento pai, vai o último
+
+// 8 - replaceChild
+const h2 = document.createElement('h2')
+h2.textContent = 'Meu novo título!' // método para escever no elemento
+header.replaceChild(h2, title) // método para trocar elementos, h2 vai para o lugar do title
