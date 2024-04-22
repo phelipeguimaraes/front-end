@@ -51,3 +51,11 @@ const h3 = document.createElement('h3')
 h3.appendChild(myText)
 console.log(h3)
 mainContainer.appendChild(h3)
+
+// 10 - trabalhando com atributos
+const firstLink = navLinks.querySelector('a')
+console.log(firstLink)
+
+firstLink.setAttribute('href', 'https://www.facebook.com') // metodo para mudar os valores
+console.log(firstLink.getAttribute('href')) // metodo para ler
+firstLink.setAttribute('target', '_blank')
