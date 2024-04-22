@@ -68,3 +68,7 @@ console.log(footer.offsetHeight) // altura do elemento com a borda
 
 console.log(footer.clientWidth) // largura do elemento sem a borda
 console.log(footer.clientHeight) // altura do elemento sem a borda
+
+// 12 - posição do elemento
+const product1 = products[0]
+console.log(product1.getBoundingClientRect())
