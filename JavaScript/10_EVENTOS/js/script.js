@@ -39,3 +39,11 @@ btnInsideContainer.addEventListener('click', (e) => {
     e.stopPropagation() // exclusivamente vai executar só esse EVENTO! se clicar nele
     console.log('Evento 2')
 })
+
+// 5 - removendo evento padrão
+const a = document.querySelector('a')
+a.addEventListener('click', (e) => {
+    e.preventDefault() // vai "remover" o evento, ou seja não vai ser executado
+
+    console.log('Não alterou a página')
+})
