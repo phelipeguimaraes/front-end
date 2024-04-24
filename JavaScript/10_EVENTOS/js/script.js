@@ -55,3 +55,17 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('keyup', (e) => {
     console.log(`Soltou a tecla ${e.key}`) // quando é clicado a tecla é ativado
 })
+
+// 7 - eventos de mouse
+const mouseEvents = document.querySelector('#mouse')
+mouseEvents.addEventListener('mousedown', () => {
+    console.log('Pressionou o botão')
+})
+
+mouseEvents.addEventListener('mouseup', () => {
+    console.log('Soltou o botão')
+})
+
+mouseEvents.addEventListener('dblclick', () => {
+    console.log('Clique duplo')
+}) 
