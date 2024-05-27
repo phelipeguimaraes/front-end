@@ -29,7 +29,7 @@ console.log(name)
 console.log('--------------------------------') 
 
 // 2 - arrow function
-const sum =  function(a, b) {
+/*const sum =  function(a, b) {
     return a + b
 }
 
@@ -67,3 +67,25 @@ const user = {
 }
 user.sayUserName()
 user.sayUserNameArrow()
+console.log('--------------------------------') */
+
+// 3 - filter
+const arr = [1, 2, 3, 4, 5, 6]
+
+const highNumbers = arr.filter((n) => {
+    if(n >= 3) {
+        return n
+    }
+})
+console.log(highNumbers)
+
+const users = [
+    {name: 'Phelipe', available: true},
+    {name: 'Guilherme', available: false},
+    {name: 'Yuri', available: true},
+    {name: 'Dudu', available: false},
+    {name: 'Manoel', available: true},
+]
+
+const availableUsers = users.filter((user) => user.available)
+console.log(availableUsers)
