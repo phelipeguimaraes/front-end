@@ -139,3 +139,21 @@ const user = {
 const {nome, idade, mês: month, job} = user
 console.log(`O usuário ${nome} tem ${idade} anos e vai fazer aniversário agora em ${month}. Ele tem um sonho de ser ${job}`)
 console.log('-------------------')
+
+// 7 - spread operator
+const a1 = [1, 2, 3]
+const a2 = [4, 5, 6]
+
+const a3 = [...a1, ...a2]
+console.log(a3)
+
+const a4 = [0, ...a3, 7]
+console.log(a4)
+
+const carName = {name: 'Gol'}
+const carBrand = {brand: 'VW'}
+const otherInfos = {km: 100000, price: 49999}
+
+const car = {...carName, ...carBrand, ...otherInfos}
+console.log(car)
+console.log('===========================')
