@@ -7,6 +7,10 @@ import FirstComponent from './components/FirstComponent'
 // 4 - template expression
 import TemplateExpression from './components/TemplateExpression'
 
+// 5 - hierarquia
+import MyComponent from './components/MyComponent'
+
+
 function App() {
   // 3 - comentarios
 
@@ -17,6 +21,7 @@ function App() {
         <h1>Fundamentos do React</h1>
         <FirstComponent />
         <TemplateExpression />
+        <MyComponent />
       </div>
     </>
   )
