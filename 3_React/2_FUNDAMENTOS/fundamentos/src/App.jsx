@@ -10,6 +10,8 @@ import TemplateExpression from './components/TemplateExpression'
 // 5 - hierarquia
 import MyComponent from './components/MyComponent'
 
+// 6 - eventos de click
+import Events from './components/Events'
 
 function App() {
   // 3 - comentarios
@@ -22,6 +24,7 @@ function App() {
         <FirstComponent />
         <TemplateExpression />
         <MyComponent />
+        <Events />
       </div>
     </>
   )
