@@ -10,6 +10,14 @@ const ListRender = () => {
       {id: 3, name: "Lara", age: 15}
     ])
 
+    const deleteRandom = () => {
+
+      const randomNumber = Math.floor(Math.random() * 4)
+
+      setUsers((prevUsers) => prevUsers.filter((user) => randomNumber !== user.id))
+
+    }
+
   return (
     <div>
 
@@ -28,6 +36,9 @@ const ListRender = () => {
               </li>
             ))}
           </ul>
+
+        {/* 6 - previous state */}
+        <button onClick={deleteRandom}>Delete random user</button>
 
     </div>
   )
