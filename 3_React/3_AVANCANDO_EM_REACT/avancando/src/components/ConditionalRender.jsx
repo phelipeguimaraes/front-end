@@ -5,6 +5,8 @@ const ConditionalRender = () => {
     const n = 5
     const nome = 'Phelipe'
 
+    const city = 'Goiânia'
+
   return (
     <div>
         {/* 7 - render condicional */}
@@ -16,6 +18,18 @@ const ConditionalRender = () => {
 
         <h2>Isso será exibido?</h2>
         {nome == 'Phelipe' && <p>Deu bom</p>}
+
+        {/* 8 - else */}
+        <h3>Render ternário</h3>
+        {city === 'Goiânia' ?(
+            <div>
+                <p>Bem vindo Goiânia</p>
+            </div>
+        ) : (
+            <div>
+                <p>Cidade não encontrada!</p>
+            </div>
+        )}
     </div>
   )
 }
