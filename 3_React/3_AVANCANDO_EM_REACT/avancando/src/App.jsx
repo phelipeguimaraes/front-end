@@ -18,6 +18,20 @@ import ShowUserName from './components/ShowUserName'
 // 9 - desestruturando props
 import CarDetails from './components/CarDetails'
 
+// 11 - renderização de listas com componentes
+const cars = [
+  {id: 1, brand: "Ferrari", color: "Amarelo", km: 0},
+  {id: 2, brand: "KIA", color: "Branco", km: 200000},
+  {id: 3, brand: "Renault", color: "Azul", km: 32000}
+]
+
+import Peoplee from './components/Peoplee'
+const people = [
+  {id:1, name: "Phelipe", age:20, job:"Programador"},
+  {id:2, name: "Iury", age:23, job:"Servente"},
+  {id:3, name: "Dudu", age:19, job:"Jogador"}
+]
+
 import './App.css'
 
 
@@ -45,6 +59,15 @@ function App() {
         {/* 10 - reaproveitamento de componentes */}
         <CarDetails brand="Fiat" km={982457} color="Branco"/>
         <CarDetails km={340523} color="Azul" brand="Audi"/>
+
+        {/*11 - renderização de listas com componentes */}
+        {cars.map((car) => (
+          <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km}/>
+        ))}
+        
+        {people.map((person) => (
+          <Peoplee key={person.id} name={person.name} age={person.age} job={person.job}/>
+        ))}
 
       </div>
     </>
