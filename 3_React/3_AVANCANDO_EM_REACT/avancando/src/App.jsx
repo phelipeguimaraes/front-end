@@ -42,6 +42,10 @@ function App() {
         <ShowUserName name="Phelipe"/>
         {/* 9 - desestruturando props */}
         <CarDetails brand="VW" km={999} color="Vermelho"/>
+        {/* 10 - reaproveitamento de componentes */}
+        <CarDetails brand="Fiat" km={982457} color="Branco"/>
+        <CarDetails km={340523} color="Azul" brand="Audi"/>
+
       </div>
     </>
   )
