@@ -25,6 +25,9 @@ const cars = [
   {id: 3, brand: "Renault", color: "Azul", km: 32000}
 ]
 
+// 12 - fragments
+import Fragment from './components/Fragment'
+
 import Peoplee from './components/Peoplee'
 const people = [
   {id:1, name: "Phelipe", age:20, job:"Programador"},
@@ -68,6 +71,9 @@ function App() {
         {people.map((person) => (
           <Peoplee key={person.id} name={person.name} age={person.age} job={person.job}/>
         ))}
+
+        {/* 11 - Fragments */}
+        <Fragment />
 
       </div>
     </>
