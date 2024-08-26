@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Children, useState } from 'react'
 
 // 2 - imagem em assets
 import night from './assets/city.jpg'
@@ -27,6 +27,9 @@ const cars = [
 
 // 12 - fragments
 import Fragment from './components/Fragment'
+
+// 13 - children
+import Container from './components/Container'
 
 import Peoplee from './components/Peoplee'
 const people = [
@@ -74,6 +77,15 @@ function App() {
 
         {/* 11 - Fragments */}
         <Fragment />
+
+        {/* 12 - Children */}
+        <Container>
+          <p>Alguma coisa</p>
+        </Container>
+        <Container>
+        <h2>Teste</h2>
+        <p>Meu componente</p>
+        </Container>
 
       </div>
     </>
