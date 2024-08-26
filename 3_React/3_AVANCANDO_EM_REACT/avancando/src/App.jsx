@@ -31,6 +31,9 @@ import Fragment from './components/Fragment'
 // 13 - children
 import Container from './components/Container'
 
+// 14 - funcao em prop
+import ExecuteFunction from './components/ExecuteFunction'
+
 import Peoplee from './components/Peoplee'
 const people = [
   {id:1, name: "Phelipe", age:20, job:"Programador"},
@@ -43,6 +46,11 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  // 14 - funcao em prop
+  function showMessage() {
+    console.log("Evento do componente pai")
+  }
 
   return (
     <>
@@ -86,6 +94,9 @@ function App() {
         <h2>Teste</h2>
         <p>Meu componente</p>
         </Container>
+
+        {/* 14 - funcao em prop */}
+        <ExecuteFunction myFunction={showMessage}/>
 
       </div>
     </>
