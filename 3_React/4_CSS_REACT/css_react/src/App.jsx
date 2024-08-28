@@ -3,6 +3,9 @@ import './App.css'
 import MyComponent from './components/MyComponent'
 
 function App() {
+  // 4 - inline style dinâmico
+  const n = 15
+
   return (
     <>
       <div>
@@ -16,6 +19,10 @@ function App() {
 
         {/* 3 - inline style */}
         <p style={{color: 'blue', padding: '20px', borderTop: '1px dotted blue'}}>Este elemento tem estilos inline</p>
+
+        {/* 4 - inline style dinâmico */}
+        <h2 style={n > 10 ? {color:'green'} : {color: 'purple'}}>CSS dinâmico</h2>
+        <h2 style={n > 20 ? {color:'green'} : {color: 'purple'}}>CSS dinâmico</h2>
       </div>
     </>
   )
