@@ -13,6 +13,9 @@ function App() {
         {/* 2 - css de componente */}
         <MyComponent/>
         <p>Pegou o CSS do componente</p>
+
+        {/* 3 - inline style */}
+        <p style={{color: 'blue', padding: '20px', borderTop: '1px dotted blue'}}>Este elemento tem estilos inline</p>
       </div>
     </>
   )
