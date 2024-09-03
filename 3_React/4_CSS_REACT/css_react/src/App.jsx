@@ -6,6 +6,9 @@ function App() {
   // 4 - inline style dinâmico
   const n = 15
 
+  // 5 - classes dinâmicas
+  const redTitle = true
+
   return (
     <>
       <div>
@@ -23,6 +26,10 @@ function App() {
         {/* 4 - inline style dinâmico */}
         <h2 style={n > 10 ? {color:'green'} : {color: 'purple'}}>CSS dinâmico</h2>
         <h2 style={n > 20 ? {color:'green'} : {color: 'purple'}}>CSS dinâmico</h2>
+
+        {/* 5 - classes dinâmicas  */}
+        <h2 className={redTitle ? "red-title" : "title"}>Este título vai ter uma classe</h2>
+
       </div>
     </>
   )
