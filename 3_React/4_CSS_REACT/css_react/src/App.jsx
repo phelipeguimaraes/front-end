@@ -1,6 +1,7 @@
 import './App.css'
 // 2 - css do componente
 import MyComponent from './components/MyComponent'
+import Title from './components/Title'
 
 function App() {
   // 4 - inline style dinâmico
@@ -29,6 +30,9 @@ function App() {
 
         {/* 5 - classes dinâmicas  */}
         <h2 className={redTitle ? "red-title" : "title"}>Este título vai ter uma classe</h2>
+
+        {/* 6 - CSS Modules */}
+        <Title />
 
       </div>
     </>
