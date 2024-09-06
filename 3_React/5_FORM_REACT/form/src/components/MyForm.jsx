@@ -15,11 +15,15 @@ const MyForm = ({userName, userEmail}) => {
     // 5 - envio de form
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(name,email)
+        console.log(name, email)
 
 
         // validação
         // envio
+
+        // 7 - limpar o form
+        setName("")
+        setEmail("")
     }
 
     console.log(name, email)
