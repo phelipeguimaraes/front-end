@@ -32,6 +32,16 @@
       "id": "cb3f",
       "name": "comBody",
       "price": "5"
+    },
+    {
+      "id": "33dc",
+      "name": "chapeu",
+      "price": "7"
+    },
+    {
+      "id": "1aa0",
+      "name": "chapeu",
+      "price": "7,90"
     }
   ]
 }
