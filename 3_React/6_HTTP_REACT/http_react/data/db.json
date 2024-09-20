@@ -42,6 +42,16 @@
       "id": "1aa0",
       "name": "chapeu",
       "price": "7,90"
+    },
+    {
+      "id": "abc5",
+      "name": "custom hooks",
+      "price": "53"
+    },
+    {
+      "id": "cedb",
+      "name": "custom hooks",
+      "price": "53"
     }
   ]
 }
