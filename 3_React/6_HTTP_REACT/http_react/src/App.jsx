@@ -11,7 +11,7 @@ function App() {
   const [products, setProducts] = useState([])
 
   // 4 - custom hook
-  const {data: items} = useFetch(url)
+  const {data: items, httpConfig} = useFetch(url)
 
 //  useEffect(() => {
 //
@@ -34,24 +34,31 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-
+   
+   
     const product = {
       name,
       price
     }
 
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(product),
-    })
+
+    // 5 - refatorando POST
+    httpConfig(product, "POST")
+
+
+
+  //  const res = await fetch(url, {
+  //    method: "POST",
+  //    headers: {
+  //      "Content-Type": "application/json",
+  //    },
+  //    body: JSON.stringify(product),
+  //  })
 
     // 3 - carregamento dinamico
-    const addedProduct = await res.json()
+  //  const addedProduct = await res.json()
 
-    setProducts((prevProducts) => [...prevProducts, addedProduct])
+  //  setProducts((prevProducts) => [...prevProducts, addedProduct])
 
   }
   

@@ -52,6 +52,16 @@
       "id": "cedb",
       "name": "custom hooks",
       "price": "53"
+    },
+    {
+      "id": "aeeb",
+      "name": "lipii",
+      "price": "8"
+    },
+    {
+      "id": "e623",
+      "name": "envio",
+      "price": "10"
     }
   ]
 }
