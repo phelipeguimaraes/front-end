@@ -99,7 +99,10 @@ function App() {
                />
             </label>
 
-            <input type="submit" value="Enviar" />
+            {/* <input type="submit" value="Enviar" /> */}
+            {/* 7 - loading POST */}
+            {loading && <input type="submit" disabled value="Aguarde"  />}
+            {!loading && <input type="submit" value="Criar"  />}
 
           </form>
         </div>
