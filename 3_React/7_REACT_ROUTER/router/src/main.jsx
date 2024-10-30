@@ -11,16 +11,30 @@ import ErrorPage from './routes/ErrorPage.jsx'
 //1 - configurando router
 import { createBrowserRouter, RouterProvider, Router } from "react-router-dom"
 
+// 3 - componente base
+import Home from './routes/Home.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    // 3 - componente base
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "contact",
+        element: <Contact />
+      }
+    ]
   },
-  {
-    path: "contact",
-    element: <Contact />,
-  },
+//  {
+//    path: "contact",
+//    element: <Contact />,
+//  },
 ])
 
 
