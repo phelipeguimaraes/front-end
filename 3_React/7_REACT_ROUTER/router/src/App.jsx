@@ -5,6 +5,9 @@ import { Outlet } from 'react-router-dom'
 // 5 - link entre paginas
 import Navbar from './components/Navbar'
 
+// 9 - search 
+import SearchForm from './components/SearchForm'
+
 function App() {
   
 
@@ -12,7 +15,7 @@ function App() {
     <>
       <div>
         <Navbar />
-        <p>Navbar</p>
+        <SearchForm />
         <Outlet/>
         <p>Footer</p>
       </div>

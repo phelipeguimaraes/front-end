@@ -22,6 +22,9 @@ import Info from './routes/Info.jsx'
 
 import Back from './routes/Back.jsx'
 
+// 9 - search
+import Search from './routes/Search.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,6 +54,12 @@ const router = createBrowserRouter([
       {
         path: "products/:id/info",
         element: <Info />
+      },
+
+      // 9 -  search
+      {
+        path: "search",
+        element: <Search />
       }
     ]
   },
