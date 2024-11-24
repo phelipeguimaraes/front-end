@@ -6,6 +6,10 @@ import App from './App.jsx'
 import Home from './routes/Home.jsx'
 import Contact from './routes/Contact.jsx'
 
+// 2 - criando o provider
+import { CounterContextProvider } from './context/CounterContext.jsx'
+
+
 import {
    createBrowserRouter, 
    RouterProvider, 
@@ -33,6 +37,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CounterContextProvider>
+      <RouterProvider router={router} />
+    </CounterContextProvider>
   </StrictMode>,
 )
