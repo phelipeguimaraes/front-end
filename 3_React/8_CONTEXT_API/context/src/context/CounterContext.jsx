@@ -7,12 +7,12 @@ export const CounterContext = createContext()
 export const CounterContextProvider = ({children}) => {
 
     const [counter, setCounter] = useState(5)
+    const [stringg, setStringg] = useState('Clique')
 
     return (
-        <CounterContext.Provider value={{counter, setCounter}}>
+        <CounterContext.Provider value={{counter, setCounter, stringg, setStringg}}>
             {children}
         </CounterContext.Provider>
     )
-
 
 }
