@@ -2,10 +2,13 @@ import { useContext, useState } from "react"
 
 import { CounterContext } from "../context/CounterContext"
 
+// 4 - Refatorando com hook
+import { useCounterContext } from "../hooks/useCounterContext"
+
 const ChangeCounter = () => {
 
-    const {counter, setCounter} = useContext(CounterContext)
-    const {stringg, setStringg} = useContext(CounterContext)
+    const {counter, setCounter} = useCounterContext()
+    const {stringg, setStringg} = useCounterContext()
 
   return (
     <div>
