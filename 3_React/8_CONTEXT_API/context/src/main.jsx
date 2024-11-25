@@ -9,6 +9,9 @@ import Contact from './routes/Contact.jsx'
 // 2 - criando o provider
 import { CounterContextProvider } from './context/CounterContext.jsx'
 
+// 5 - context mais complexo
+import { TitleColorContextProvider } from './context/TitleColorContext.jsx'
+
 
 import {
    createBrowserRouter, 
@@ -38,7 +41,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CounterContextProvider>
-      <RouterProvider router={router} />
+      <TitleColorContextProvider>
+        <RouterProvider router={router} />
+      </TitleColorContextProvider>
     </CounterContextProvider>
   </StrictMode>,
 )
